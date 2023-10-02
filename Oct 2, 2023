@@ -1,0 +1,178 @@
+Object Oriented Programming (OOP) //unsuitable for designing an entire system. Model/View/Controller is a much better option for the grand scheme
+-Abstraction
+-Inheritance
+-Polymorphism
+
+Object Based Programming 
+-Create Classes without those requirements
+
+Inheritance 
+-Code Reuse //kinda like generics in that way
+-"is a " //watch for these words in inheritance.
+
+(class) Semi-truck is a (Class MotorVehichle)
+car is a MotorVehicle
+PickUpTruck is a MotorVehicle
+
+
+
+
+
+
+Abstraction:
+
+	MotorVehichle //Inheritance dictates that this should be a class
+	
+	
+	//Abstraction says that we should make these variables.
+	-String ID
+	-int topSpeed
+	-int mileage
+	-float mpg
+	
+	
+Class SemiTruck extends MotorVehicle
+Class car extends MotorVehichle
+
+SuperClass - CommonClass - BaseClass - ParentClass
+SubClass - different classes - DerivedClass, ChildClass
+A subclass may only have one superClass in JAVA. C++ is unlimited
+Chained sub-super-class = inheritance heiarchy
+
+
+Method Overloading
+-two methods, same name, same arguements
+
+
+Method OverWriting
+-same method in a superclass and subclass. 
+-subclass method overrides the superclass method.
+super.setWidth();
+superClass methods may be empty
+
+Rectangle r = new Rectangle();
+Shape rect = new Rectangel();
+
+	
+ 
+ ////////////////////////////////////////////////////////////////////////////////////////////
+
+public class Rectangle extends Shape{
+					            //is a
+
+	private int width;
+	private int height;
+
+
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+}
+////////////////////////////////////////////////////////////////////////////////////////////
+
+public class Circle extends Shape{
+	  				//is a
+
+	private int radius;
+
+
+
+	public int getRadius() {
+		return radius;
+	}
+
+
+
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+public class Main {
+	public static void main(String[] args) {
+		Main m = new Main();
+		m.go();
+	}
+	
+	public void go() {
+		Rectangle r = new Rectangle();
+		Circle c = new Circle();
+		Shape s = new Rectangle();
+		r.setHeight(20);
+	}
+
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+public class Shape {
+	private int x;
+	private int y;
+
+	public void draw() {
+		
+	}
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+public class Square extends Rectangle{
+	public void setWidth(int width) {
+		super.setWidth(width);
+		super.setHeight(width);
+	}
+	public void setHeight(int height) {
+		super.setWidth(height);
+		super.setHeight(height);
+	}
+
+
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
