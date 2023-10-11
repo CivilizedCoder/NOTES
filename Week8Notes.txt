@@ -1,0 +1,98 @@
+WEEK 8 10/11/23
+
+
+When are contructors called? 
+	when Shape shape = new Shape; (the new keyword instantiates a shape)
+	//You can have many Contructors with different arguements.
+	use super keyword to make the superclass run the proper constructor
+	subclass constructor must override default constructor call on first line of method
+	
+	
+Polymorphism
+	Shape s = new Square(50, 50);
+	s.draw();
+	seeks out the "subest" possible method call of draw() looks at square, no? Rectangle, no? Shape, yes!
+	The superclass is an abstraction which does not exist, so draw is empty, BUT IT LOOKS REAL.
+	The reenforce thhis fact, you can make it an abstract method by saying:
+	public abstract method draw();
+	BUT THEN, THERE CAN BE NO INSTANCE OF SHAPE CALLED. only square, rect, circle, etc.
+	abstract classes are the ultimate superclass, almost like an interface at that point.
+	public final int getX(){} "Don't allow the subclasses to override this method."
+	protected int y; "private to the outside world, public in terms of subclasses."
+		ONLY use when all values of x and y are acceptable.
+		normal use:
+			protected void utilityMethod(){
+			
+			}
+	
+	
+	
+	
+	DYNAMIC METHOD LOOKUP:
+		Compile-time
+			methods must be supported on the superclass
+		run-time
+			methods can be overridden by the subclass
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is dynamic method lookup?
+	Compile-time
+			methods must be supported on the superclass
+		run-time
+			methods can be overridden by the subclass
+
+What is polymorphism?
+
+What is an abstract method?
+
+What is an abstract class?
+
+What is a final method?
+
+What is a final class?
+
+What is protected access?
+
+
+
+
+
+coupling and cohesion design class principles
+
+coupling
+	how much does this class rely on other classes?
+	keep this as low as posible, this makes it almost impossible to change any ONE class without error.
+	
+cohesion
+	how internally constistent a class is (how much does this fit together)
+	keep this high
+	
+Single responsibility principles
+	keep each purpose stated and concise
+use subclasses to represent changes in behavior
+	don't subclass if you're not changing behavior
+
+
+avoid using inheritance and polymorphism when possible
+	small and focused, not big and complex
+
+draw UML diagram for exercise due monday
+	tells a story
+x = y<10? true: false;
