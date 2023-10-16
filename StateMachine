@@ -1,0 +1,6 @@
+State Machine
+	-Game represented as a series of states door = (open/closed)(locked/unlocked)
+	-Diagram will make code really easy
+	-Use states for the big changes. Use booleans for simple true/false
+	-Main loop
+	-Make one enum to represent all possible states
