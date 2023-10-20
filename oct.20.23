@@ -1,0 +1,7 @@
+MUST HAVE STATE DIAGRAMS
+	Circles - actions that changes the location to a different circle(STATE)
+	
+MUST USE state based model-view-controller architecture
+STATE SUPERCLASS AND ENUM
+Hashmap has a key and a value
+private HashMap<State, room>states = new HashMap<State, room> ();
