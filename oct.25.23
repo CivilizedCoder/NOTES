@@ -1,0 +1,67 @@
+DATE/TIME QUESTIONS:
+
+Data types
+	
+	byte     1 byte      256  (0-255) (-128 to 127)
+						adding one to 127 = -128 (overflow)
+						subtracting 1 from -128 = 127 (underflow)
+	short    2 bytes     
+	int      4 bytes
+	long     8 bytes
+		All can hold intagers
+		All are signed (hold negative and positive numbers)
+	
+	char
+		holds ascii/unicode vals and is therefore unsigned. Holds 2 bytes
+		
+		
+		
+LocalDate today = LocalDate.now();
+						   .of();   // typical of factory pattern. Static method on a class that gives you instances.
+Period difference = Period.between(christmas, notChristmas);
+Period age = Period.between(birhdate, LocalDate.now();
+
+Packages:
+	import java.util.Scanner; //read like directory path. Somewhere on computer is directory java/util/Scanner.class
+	classpath
+		set of root directories to look in for imports
+		claspath=c:\foo\util;c:\javalib
+		c:\foo\util\java\util\Scanner.class first, then
+		
+		
+		
+	package foo //subdirectory named foo
+	import foo.util.mySub
+	
+	
+	public class foo{
+	private in x;
+	
+	private/public/protected int setX() {x = 1;}
+	void setX(){x = 1;} //this has packeage access. every class within package can access method.
+	}
+	
+	.jar file is .zip file renamed with a specific directory structure. It can be used as part of a class path. //can still be unzipped to see what's inside
+	
+	There is a standard for package naming, like websites.
+	IndustrialLighting.com
+	com.IndustrialLighting.util
+	org.mynet.util
+	//Start getting a feel for how packages work.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
