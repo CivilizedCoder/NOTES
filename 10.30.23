@@ -1,0 +1,13 @@
+Object class
+	-hidden superclass of every Java inheritance hierarchy
+	public class foo{} //automatically extends object
+	
+	.equals(), toString()
+	if(!(obj instanceof Shape)) //is the object on the left and instance of the object on the right?
+	must override equals method in rectangle cause default doesn't know about width or height.
+	reu=turn width == other.width && height == other.height;  //only checks the x
+	must also put in overridden statement if(! superclass.equals(obj)) {return false;}
+	Thereby checking the added x, and the original y.
+	
+	whenever you right classes, allow for toString();
+	In subclass, prepare with String s = super.toString();
