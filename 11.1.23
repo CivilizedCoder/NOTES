@@ -1,0 +1,88 @@
+Graphs
+	set of nodes connected by edges
+	think of it in the drawn out form.
+	graphs also called networks as they can well represent road (etc.)  networks
+	Mathematical V(G) = {A,B,C} list of Vertices
+	E(G) = {(A,C), (B,C)} list of edges
+	directed graphs hold one-way streets (Edges)
+	E(G) = {<A,C>, <B,C>, <C,A>} 
+	restrictions of graphs for computerscience reasons
+		no channal from point a to point a 
+		no identical edges (unless limit to use per edge)
+	
+	
+	N = number of nodes in the graphs
+	E = number of edges in the graphs
+	Adjacency = direct travel from one to the other
+	Subgraph = smaller piece, "Graphs are just sets, you can have a subset."
+	
+	In-degree of node = number of edges that can go in.
+	Out-degree of node = number of edges that can go out.
+	degree of node = total connections per node.
+	
+	complete graph = graph with max num of possible edges (no dupes, no a-a connection)
+		for undirected graph = N*(N-1)/2
+		for directed graph = N*(N-1)
+	
+	connected graph = no rogue nodes (or series of nodes)
+	
+	Strongly connected = move from any point a to any point x (indirectly)
+		undirected connected graphs are inherently strongly connected
+		Untrue of directed graphs
+		
+	Biconnected = no articulation points (No node would destroy complete graph when removed) = good
+	
+	Path = sequence of nodes that take you from node a - node c. (A-B-C) or (A-B-C-B-A)
+	
+	simple path = every node is unique(Except first and last) = good
+	cycle is a path with same first and last node (A-B-C-A)
+		if untrue, path is acyclic
+		
+		
+		
+
+
+
+1) Graph #1 is strongly connected, as it is a connected and undirected. Graph #2 is not strongly connected, as you cannot move from node B to node E.
+
+2) Neither graph forces any one sequence to make a cycle.
+
+3) What is the degree of each vertex? If the graph is directed, provide the in-degree and outdegree of each vertex.
+
+Graph #1 degree of A = 3, B = 2, C = 2, D = 3, E = 2.
+
+Graoh #2
+
+Node,  in-degree:out-degree
+
+A,            1:2
+
+B,            2:1
+
+C,           2:1
+
+D,           1:1
+
+E,            0:1 
+
+4) Neither graph is complete, Graph #1 requires a total of 10 edges to be complete, and Graph #2 requires 20 edges to be complete.
+
+5) For Graph #1 is {(A,B), (A,C), (A,D), (B,E), (A,B), (E,D), (D,C)}.
+
+For Graph #2 is {}.
+
+
+
+		
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+		
