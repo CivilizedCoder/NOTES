@@ -1,0 +1,122 @@
+Weighted Graphs
+	cost attributed to raveling over a specific edge. (Distance?, cost of carrying supplies?, fuel per travel?)
+	<C,A> cost of 3, <A,C> cost of 8 == {<A,C,8>, <C,A,3>, <B,C,3>}
+	If we Search
+		Breadth first
+			TRAVELS MULTIPLE EDGES AT A TIME
+			uses queue
+		
+		
+		Depth first
+			FINISHES PATH BEORE CHECKING ANOTHER PATH
+			(lab 1 Maze)
+			uses stack
+			anything recursive is already using a stack
+			
+			
+			
+
+
+
+BREADTH FIRST
+Queue         Visited 
+------        -------
+A                                            //put index into queue
+B C             A                            //pop a, pull neighbors forever
+C E             B                            
+E D E           C                            
+D E F           E
+E F F           D 
+F F F           //E already visited
+F F             F 
+F               //already F 
+-               //Already F 
+				
+				
+				
+-----------------------------------------
+
+			
+Depth First				
+Stack           Visited
+------          -------
+A                      
+B C                 A 
+B D E               C 
+B D B F             E 
+B D B D             F 
+B D B               D 
+B D                 B 
+B                   //D on
+-                   //B on 
+
+
+
+
+
+
+
+
+
+
+
+
+Questions
+1)
+Graph #1 = 16,
+Graph #2 = 24.
+
+2)
+Graph #1 
+Queue           Visited
+------          -------
+A 
+B C D           A 
+C D E           B
+D E D           C 
+E D E           D 
+D E             E 
+E               -
+-               - 
+
+
+Graph #2 
+Queue          Visited
+------         -------
+A 
+B C            A
+C E C          B 
+E C D          C 
+C D            E 
+D D            -
+D              D 
+-              -
+
+
+
+3)
+
+Graph #1
+Stack                Visited 
+------               --------
+A 
+B C D                A 
+B C C E              D 
+B C C B              E 
+B C C                B  
+B C                  C  
+B                    -
+-                    - 
+
+Graph #2
+Stack                Visited
+-----                -------
+A 
+B C                  A 
+B D                  C 
+B                    D 
+E                    B
+-                    E 
+-                    -
+ 
+
