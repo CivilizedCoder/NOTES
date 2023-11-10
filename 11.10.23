@@ -1,0 +1,10 @@
+Use either search method, if all nodes visited, it is solvable.
+Read from directory of files. Process ALL .TXT files as their own graph.
+file format
+
+4 nodes
+1 3 first node edges
+    second node edges   
+	third node edges
+	fourth node edges 
+	
