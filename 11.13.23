@@ -1,0 +1,28 @@
+
+Euler circuit
+	path crosses every edge once, ends where it started.
+	for undirected, degree of a needs to be even, and therefore every node
+	
+	for directed graph, in and out degree must be equal for every node
+	
+	
+	
+Euler path
+	does not end at started, crosses every edge once.
+	
+	MUTUALLY EXCLUSIVE
+	
+	Starting node must be odd for undirected as well as ending node, all others are even.
+	2 odd, others even, = ueluers path
+	
+	Directed
+		Starting node must have out degree one higher than in degree.
+		Ending node has one more in than out-degree.
+		
+		
+Adjecency matrix used to calculate degrees. = all you need.
+Adj. List doesn't store 0s.
+	javax.swing.JFileChooser;
+	
+	
+	setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
