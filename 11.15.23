@@ -1,0 +1,74 @@
+TREES (more like an organizational chart)
+	root node      = node without a parent (The first one)
+	Parent node    = node that is above childred (1 parent per node)
+	child node     = node under parent. any number of child nodes can exist under a parent node
+	leaf node      = node without children (end of branch)
+	sibling nodes  = same parent
+	height of tree = number of nodes from first to last (including first)
+	depth of node  = height at which this node appears
+	degree of node = number of children
+	degree of TREE = highest degree of node
+	subtree        = treating any node in a tree as a root
+	full tree      =  All leaf nodes are at the same depth
+	complete tree  = visually the depth can only go up by one ever, and never go down from left to right
+	Skewed tree    = lopsided to a severe amount, looks very unbalanced
+	Binary tree    = 0, 1, or 2 children 
+		full binary tree (maximum children, + all at same level)
+		complete binary tree (agghhhh)
+	
+
+	
+	Pre-order traversal 
+		preOrder(root)
+			visit(root)
+			Preorder(leftL)
+			preorder(rightR)
+	ABDEC
+	
+	
+	
+	In-order traversal
+		inOrder(root)
+			inorder(leftChild of root)
+			visit root
+			inorder(rightChild or root)
+	DBEAC
+			
+			
+	Post-order traversal 
+			preOrder(root)
+			Preorder(leftL)
+			preorder(rightR)
+			visit(root)
+	DEBCA
+	
+	Breadth-first Transversal
+		
+		
+	Binary search is efficient because you can sort the Binary sort tree
+	Everything left of root is less than root,
+	Everything above root is greater than root.
+	
+	
+
+
+
+
+
+
+
+
+1) Yes.
+2) No.
+3) Yes.
+4) 4
+5) 2
+6) 3, 5, 9, 12, 13, 14, 15, 18, 20, 22
+7) 15, 9, 5, 3, 13, 12, 14, 20, 18, 22 
+8) 3, 5, 12, 14, 13, 9, 18, 22, 20, 15
+9) 15, 9, 20, 5, 13, 18, 22, 3, 12, 14
+10) 1
+
+
+
+
