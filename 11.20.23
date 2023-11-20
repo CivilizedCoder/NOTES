@@ -1,0 +1,41 @@
+Big Oh rating
+	measures algorythm efficiency (run time per data quantity)
+	O(1)      - Constant Time, (running time unassociated with length of array i.e. print(arr[0]) - HOLY GRAIL
+	O(log(N)) - Log Time
+	O(N)      - linear time, Double the data = double the time
+	O(NlogN)  - 
+	O(N^2)    - Quadratic Time, Time goes up exponentially faster than data size.
+	O(2^N)    - Exponential Time
+	O(N!)     - Factorial Time
+	
+	
+	Based on loops (loops based on N)
+		constant  = 0 loops
+		linear    = 1 loop 
+		quadratic = 2 nested loops //Nonnested loops just add N i.e. O(2N) which we call just O(N)
+		log       =  Division of search space each time
+		NlogN     = combination of log and quad
+		
+		
+		searching tree is O(N)
+		searching binary tree = O(logN)
+		
+			if item is null
+				return null
+			if item = wanted
+				return true
+			if item < wanted
+				right
+			if item > wanted
+				left
+			
+		if you remove node with single child, that child is adopted by grandfather
+		if you remove node with 2 children, remove biggest from left or smalles from right. Either way, looking at it should make sense.
+		
+		Full algorythm is in PDF
+		
+		EXERCISE IS CUMULATIVE, ADD EACH OPERATION ONTO YOUR MODIFIED GRAPH.
+		
+		
+		
+		
