@@ -1,0 +1,57 @@
+Hash Tables (make seatching efficient)                      Searching array O(N) ||| Binary Search Tree O(logN) ||| Hash Table O(1) |||
+Amazing if you have to check a lot. Word processor spellcheck uses hashtable.
+
+
+
+0|
+1|
+2|
+3|
+4|
+5|
+6|
+7|
+8|
+9|
+
+add one
+
+0|
+1| 1
+2|
+3|
+4|
+5|
+6|
+7|
+8|
+9|
+
+add five
+
+0|
+1| 1
+2|
+3|
+4|
+5| 5
+6|
+7|
+8|
+9|
+  
+Hash function converts value to an index
+	int hash(value)
+		return value % arraySize;
+	Collissions = some values want to go to the same index
+		lINEAR PROBING i, i + 1, i + 2...
+			put value in next possible slot (Not so good) worst case 0(N)
+		Quadratic probing
+			put value in next i + 1^2, i + 2^2, i+ 3^2... (better)   0(N)
+		Seperate Chaining
+			put list in each index, simply add to the list.  
+			limiting list size is possible
+				if overflow
+					double size of hashtable, and rehash everything in the overflowing has point in to the new 
+			
+	
